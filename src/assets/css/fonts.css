@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900;1000&display=swap');
+
+@font-face {
+  font-family: 'Valverde';
+  src: local('Valverde-CondensedSemibold'), url(../fonts/Valverde-CondensedSemibold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'TASA Orbiter';
+  src: local('TASAOrbiterDisplay-Black'), url(../fonts/TASAOrbiterDisplay-Black.otf) format('opentype');
+}
