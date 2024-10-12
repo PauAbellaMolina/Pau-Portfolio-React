@@ -5,8 +5,9 @@
 }
 
 .App {
-  height: 100vh;
+  min-height: 100%;
   display: flex;
+  gap: 3.5rem;
   flex-flow: column;
   justify-content: space-between;
   transition: all 0.4s ease-in-out;
@@ -95,7 +96,7 @@ a:hover {
   display: flex;
   flex-flow: column;
   gap: 2rem;
-  padding: 0 3rem 3rem 3rem;
+  padding: 0 3rem 2.8rem;
 }
 
 .contactPlaces {
@@ -114,5 +115,15 @@ a:hover {
   }
   p {
     font-size: 6vw;
+  }
+  .header {
+    padding: 3.5rem 1rem 0 1rem;
+    gap: .35rem;
+  }
+  .content {
+    padding: 0 1rem .8rem;
+  }
+  .contactPlaces {
+    gap: .35rem;
   }
 }
