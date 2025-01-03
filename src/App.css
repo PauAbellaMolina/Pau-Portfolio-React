@@ -1,7 +1,50 @@
-::selection {
+.page-wrapper {
+  height: 100%;
+}
+
+.page-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: background-color .2s ease-in-out;
+}
+
+.page-content {
+  position: relative;
+  z-index: 1;
+  animation: fadeIn .8s ease-in-out;
+  height: 100%;
+}
+
+.page-background {
+  background-color: #173624;
+}
+
+.norda .page-background {
+  background-color: #EEE7FF;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.App ::selection {
   background-color: #fff0db;
   color: #173624;
   -webkit-text-fill-color: #173624;
+}
+
+.norda .App ::selection {
+  background-color: #7958CE;
+  color: #EEE7FF;
+  -webkit-text-fill-color: #EEE7FF;
 }
 
 .App {
@@ -43,8 +86,22 @@
   width: 35px;
   height: 35px;
   cursor: pointer;
-  animation: zoom-in-zoom-out 5s ease infinite;
+  animation: zoom-in-zoom-out 4s ease infinite;
 }
+
+.norda .sparks span {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: #7958CE;
+  pointer-events: none;
+}
+.norda .sparks span::selection {
+  background-color: transparent;
+  color: #7958CE;
+  -webkit-text-fill-color: #7958CE;
+}
+
 @keyframes zoom-in-zoom-out {
   0% {
     transform: scale(1, 1);
@@ -107,6 +164,15 @@ a:hover {
   flex-flow: column;
   gap: .5rem;
   align-items: flex-end;
+}
+
+.link {
+  text-decoration: underline;
+  transition: transform .1s ease-in-out;
+  display: inline-block;
+}
+.link:hover {
+  transform: skewX(-15deg);
 }
 
 @media (max-width:600px) {
