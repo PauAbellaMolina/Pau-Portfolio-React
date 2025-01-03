@@ -46,8 +46,8 @@ function Home() {
       </div>
       <div className='content'>
         <span>
-          <p>I'm a Frontend Engineer & Product Designer passionate about software and design.</p>
-          <p>Making products fast and pretty is my goal.</p>
+          <p>I'm a Frontend Engineer & Product Designer passionate about solving problems</p>
+          <p>through software and good design.</p>
         </span>
         <span>
           <p>I also surf when there are waves and run when there isn't.</p>
