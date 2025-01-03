@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import '../assets/css/fonts.css';
 import '../App.css';
 import { useState } from 'react';
