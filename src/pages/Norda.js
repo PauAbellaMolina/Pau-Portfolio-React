@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../assets/css/fonts.css';
 import '../App.css';
 import { useState } from 'react';
@@ -38,12 +39,16 @@ function Norda() {
       <div className="header">
         <h1>Norda Tickets</h1>
         <div className="contactPlaces">
+          <a href='https://info.nordatickets.com'>Landing Page</a>
           <a href='https://instagram.com/nordatickets'>Instagram</a>
           <a href='https://www.linkedin.com/company/nordatickets'>LinkedIn</a>
           <a href='mailto:hello@nordatickets.com'>Email</a>
         </div>
       </div>
       <div className='content'>
+        <span>
+          <p>Check it out <Link className="link" to="https://info.nordatickets.com">here</Link></p>
+        </span>
         <span>
           <p>Boosting event revenues by digitising the sale and management of tickets, drinks and consumables at concerts and festivals.</p>
         </span>
