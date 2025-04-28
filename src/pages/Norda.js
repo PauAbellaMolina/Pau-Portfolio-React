@@ -47,7 +47,7 @@ function Norda() {
       </div>
       <div className='content'>
         <span>
-          <p>Check it out <Link className="link" to="https://info.nordatickets.com">here</Link></p>
+          <p>Check it out <Link className="link" to="https://nordatickets.com">here</Link></p>
         </span>
         <span>
           <p>Boosting event revenues by digitising the sale and management of tickets, drinks and consumables at concerts and festivals.</p>
