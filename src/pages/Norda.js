@@ -39,7 +39,7 @@ function Norda() {
       <div className="header">
         <h1>Norda Tickets</h1>
         <div className="contactPlaces">
-          <a href='https://info.nordatickets.com'>Landing Page</a>
+          <a href='https://nordatickets.com'>Landing Page</a>
           <a href='https://instagram.com/nordatickets'>Instagram</a>
           <a href='https://www.linkedin.com/company/nordatickets'>LinkedIn</a>
           <a href='mailto:hello@nordatickets.com'>Email</a>

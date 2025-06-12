@@ -46,14 +46,14 @@ function Home() {
       </div>
       <div className='content'>
         <span>
-          <p>I'm a Frontend Engineer & Product Designer passionate about solving problems</p>
+          <p>I'm a Software Engineer & Product Designer passionate about solving problems</p>
           <p>through software and good design.</p>
         </span>
         <span>
-          <p>I also surf when there are waves and run when there isn't.</p>
+          <p>Currently building the AI-powered nurse assistant at <Link className="link" to="https://teton.ai">Teton</Link></p>
         </span>
         <span>
-          <p>Founder and builder at <Link className="link" to="/norda">Norda Tickets</Link>, the best cashless ticketing solution for events.</p>
+          <p>Also building <Link className="link" to="/norda">Norda Tickets</Link> on my free time, the best cashless ticketing solution for events.</p>
           <p>Connect with me and check out my detailed experience on LinkedIn.</p>
         </span>
       </div>
