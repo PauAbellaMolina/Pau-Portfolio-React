@@ -47,14 +47,14 @@ function Bikepack() {
         <h1>On the bike</h1>
       </div>
       <div className='sparse-grid-content'>
-        <img src={BP1} />
-        <img src={BP2} />
-        <img src={BP3} />
-        <img src={BP4} />
-        <img src={BP5} />
-        <img src={BP6} />
-        <img src={BP7} />
-        <img src={BP8} />
+        <img src={BP1} alt="I love tiny single paths like this" />
+        <img src={BP2} alt="Packing up" />
+        <img src={BP3} alt="I wanted to check out the beach" />
+        <img src={BP4} alt="Green!" />
+        <img src={BP5} alt="So fast" />
+        <img src={BP6} alt="Found this randomly, it was really cool" />
+        <img src={BP7} alt="Swedish hills" />
+        <img src={BP8} alt="Rainy day, flowers on the back" />
       </div>
     </div>
   );
