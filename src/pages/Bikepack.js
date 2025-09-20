@@ -1,13 +1,20 @@
-import { Link } from 'react-router-dom';
 import '../assets/css/fonts.css';
 import '../App.css';
 import { useState } from 'react';
 import { ReactComponent as SparksSVG } from '../assets/svg/sparks.svg';
 import { ReactComponent as ArrowSVG } from '../assets/svg/arrow.svg';
+import BP1 from '../assets/images/bp1.webp';
+import BP2 from '../assets/images/bp2.webp';
+import BP3 from '../assets/images/bp3.webp';
+import BP4 from '../assets/images/bp4.webp';
+import BP5 from '../assets/images/bp5.webp';
+import BP6 from '../assets/images/bp6.webp';
+import BP7 from '../assets/images/bp7.webp';
+import BP8 from '../assets/images/bp8.webp';
 
-function Norda() {
+function Bikepack() {
   const defaultColorPalette = {
-    text: `#7958CE`,
+    text: `#0f4c81`,
     background: `transparent`
   };
   const [colorPalette, setColorPalette] = useState(defaultColorPalette);
@@ -36,28 +43,21 @@ function Norda() {
   return (
     <div className="App" style={{backgroundColor: colorPalette.background, color: colorPalette.text}}>
       <div className="sparks"><SparksSVG className="sparksSvg" onClick={setNewRandomColorPalette} /><ArrowSVG className="arrowSvg" /><span>{clicked ? 'You can keep clicking!' : 'Click here!'}</span></div>
-      <div className="header">
-        <h1>Norda Tickets</h1>
-        <div className="contactPlaces">
-          <a href='https://nordatickets.com'>Landing Page</a>
-          <a href='https://instagram.com/nordatickets'>Instagram</a>
-          <a href='https://www.linkedin.com/company/nordatickets'>LinkedIn</a>
-          <a href='mailto:hello@nordatickets.com'>Email</a>
-        </div>
+      <div className="centered-header">
+        <h1>On the bike</h1>
       </div>
-      <div className='content'>
-        <span>
-          <p>Check it out <Link className="link" to="https://nordatickets.com">here</Link></p>
-        </span>
-        <span>
-          <p>Boosting event revenues by digitising the sale and management of tickets, drinks and consumables at concerts and festivals.</p>
-        </span>
-        <span>
-          <p>The best purchase experience for attendees—no lines, no cash, just buy your drink using your phone</p>
-        </span>
+      <div className='sparse-grid-content'>
+        <img src={BP1} />
+        <img src={BP2} />
+        <img src={BP3} />
+        <img src={BP4} />
+        <img src={BP5} />
+        <img src={BP6} />
+        <img src={BP7} />
+        <img src={BP8} />
       </div>
     </div>
   );
 }
 
-export default Norda; 
+export default Bikepack; 
