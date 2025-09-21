@@ -20,7 +20,7 @@
 }
 
 .page-background {
-  background-color: #173624;
+  background-color: #fff0db;
 }
 
 .norda .page-background {
@@ -55,6 +55,15 @@
   -webkit-text-fill-color: #173624;
 }
 
+.pauAvatarSvg {
+  position: absolute;
+  top: 7px;
+  left: 3px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
 .norda .App ::selection {
   background-color: #7958CE;
   color: #EEE7FF;
@@ -70,80 +79,6 @@
   background-color: #0f4c81;
   color: #fff0db;
   -webkit-text-fill-color: #fff0db;
-}
-
-.norda .sparksSvg {
-  stroke: #7958CE;
-}
-.norda .arrowSvg {
-  fill: #7958CE;
-}
-.bikepack .sparksSvg {
-  stroke: #0f4c81;
-}
-.bikepack .arrowSvg {
-  fill: #0f4c81;
-}
-
-.sparks {
-  position: absolute;
-  top: 15px;
-  left: 20px;
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-}
-.sparks span {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 600;
-  font-size: 13px;
-  color: #fff0db;
-  pointer-events: none;
-}
-.sparks span::selection {
-  background-color: transparent;
-  color: #fff0db;
-  -webkit-text-fill-color: #fff0db;
-}
-.sparksSvg {
-  stroke: #fff0db;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  animation: zoom-in-zoom-out 4s ease infinite;
-}
-.arrowSvg {
-  fill: #fff0db;
-  width: 14px;
-  height: 14px;
-  transform: rotate(-90deg);
-  margin: 0 3px 0 13px;
-}
-
-.norda .sparks span {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 600;
-  font-size: 13px;
-  color: #7958CE;
-  pointer-events: none;
-}
-.norda .sparks span::selection {
-  background-color: transparent;
-  color: #7958CE;
-  -webkit-text-fill-color: #7958CE;
-}
-
-.bikepack .sparks span {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 600;
-  font-size: 13px;
-  color: #0f4c81;
-  pointer-events: none;
-}
-.bikepack .sparks span::selection {
-  background-color: transparent;
-  color: #0f4c81;
-  -webkit-text-fill-color: #0f4c81;
 }
 
 @keyframes zoom-in-zoom-out {
@@ -168,7 +103,7 @@ h1 {
   font-size: 5rem;
 }
 .bikepack h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 /* h1:hover {
   background: -webkit-linear-gradient(0deg, #9D6A06, #910330, #5E0BBD, #00698E);

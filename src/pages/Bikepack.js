@@ -1,8 +1,7 @@
 import '../assets/css/fonts.css';
 import '../App.css';
 import { useState } from 'react';
-import { ReactComponent as SparksSVG } from '../assets/svg/sparks.svg';
-import { ReactComponent as ArrowSVG } from '../assets/svg/arrow.svg';
+import { ReactComponent as PauAvatar } from '../assets/svg/pauavatar.svg';
 import BP1 from '../assets/images/bp1.webp';
 import BP2 from '../assets/images/bp2.webp';
 import BP3 from '../assets/images/bp3.webp';
@@ -18,10 +17,8 @@ function Bikepack() {
     background: `transparent`
   };
   const [colorPalette, setColorPalette] = useState(defaultColorPalette);
-  const [clicked, setClicked] = useState(false);
 
   const setNewRandomColorPalette = () => {
-    setClicked(true);
     const randomColorPalette = {
       text: getRandomColor(),
       background: getRandomColor()
@@ -42,7 +39,7 @@ function Bikepack() {
 
   return (
     <div className="App" style={{backgroundColor: colorPalette.background, color: colorPalette.text}}>
-      <div className="sparks"><SparksSVG className="sparksSvg" onClick={setNewRandomColorPalette} /><ArrowSVG className="arrowSvg" /><span>{clicked ? 'You can keep clicking!' : 'Click here!'}</span></div>
+      <PauAvatar className="pauAvatarSvg" onClick={setNewRandomColorPalette} />
       <div className="centered-header">
         <h1>On the bike</h1>
       </div>

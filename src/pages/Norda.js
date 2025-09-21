@@ -2,8 +2,7 @@ import { Link } from 'react-router-dom';
 import '../assets/css/fonts.css';
 import '../App.css';
 import { useState } from 'react';
-import { ReactComponent as SparksSVG } from '../assets/svg/sparks.svg';
-import { ReactComponent as ArrowSVG } from '../assets/svg/arrow.svg';
+import { ReactComponent as PauAvatar } from '../assets/svg/pauavatar.svg';
 
 function Norda() {
   const defaultColorPalette = {
@@ -11,10 +10,8 @@ function Norda() {
     background: `transparent`
   };
   const [colorPalette, setColorPalette] = useState(defaultColorPalette);
-  const [clicked, setClicked] = useState(false);
 
   const setNewRandomColorPalette = () => {
-    setClicked(true);
     const randomColorPalette = {
       text: getRandomColor(),
       background: getRandomColor()
@@ -35,7 +32,7 @@ function Norda() {
 
   return (
     <div className="App" style={{backgroundColor: colorPalette.background, color: colorPalette.text}}>
-      <div className="sparks"><SparksSVG className="sparksSvg" onClick={setNewRandomColorPalette} /><ArrowSVG className="arrowSvg" /><span>{clicked ? 'You can keep clicking!' : 'Click here!'}</span></div>
+      <PauAvatar className="pauAvatarSvg" onClick={setNewRandomColorPalette} />
       <div className="header">
         <h1>Norda Tickets</h1>
         <div className="contactPlaces">
