@@ -32,7 +32,6 @@ function Home() {
 
   return (
     <div className="App" style={{backgroundColor: colorPalette.background, color: colorPalette.text}}>
-      <PauAvatar className="pauAvatarSvg" />
       <PauAvatar className="pauAvatarSvg" onClick={setNewRandomColorPalette} />
       <div className="header">
         <h1>Pau Abella</h1>
