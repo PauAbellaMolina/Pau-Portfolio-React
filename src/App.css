@@ -50,9 +50,9 @@
 }
 
 .App ::selection {
-  background-color: #fff0db;
-  color: #173624;
-  -webkit-text-fill-color: #173624;
+  background-color: #0f4c81;
+  color: #fff0db;
+  -webkit-text-fill-color: #fff0db;
 }
 
 .pauAvatarSvg {

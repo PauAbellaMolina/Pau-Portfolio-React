@@ -10,6 +10,10 @@ import BP5 from '../assets/images/bp5.webp';
 import BP6 from '../assets/images/bp6.webp';
 import BP7 from '../assets/images/bp7.webp';
 import BP8 from '../assets/images/bp8.webp';
+import BP9 from '../assets/images/bp9.webp';
+import BP10 from '../assets/images/bp10.webp';
+import BP11 from '../assets/images/bp11.webp';
+import BP12 from '../assets/images/bp12.webp';
 
 function Bikepack() {
   const defaultColorPalette = {
@@ -52,6 +56,10 @@ function Bikepack() {
         <img src={BP6} alt="Found this randomly, it was really cool" />
         <img src={BP7} alt="Swedish hills" />
         <img src={BP8} alt="Rainy day, flowers on the back" />
+        <img src={BP9} alt="Didn't pause Strava on the ferry" />
+        <img src={BP10} alt="Found this creepy looking house, turned out it was just an old windmill" />
+        <img src={BP11} alt="Me!" />
+        <img src={BP12} alt="On a small lake close to Copenhagen" />
       </div>
     </div>
   );
